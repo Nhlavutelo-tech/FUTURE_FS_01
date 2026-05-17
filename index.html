@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhlavutelo Shiviri — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer building fast, scalable, and beautifully crafted web applications.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=JetBrains+Mono:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&display=swap" rel="stylesheet">
+   <!-- React App -->
+  <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a class="nav-logo" href="#hero">ns.dev<span class="cur"></span></a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact" class="nav-cta">hire me →</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('mob').classList.toggle('open')">☰</button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mob">
+    <a href="#about"      onclick="this.closest('.mobile-menu').classList.remove('open')">about</a>
+    <a href="#projects"   onclick="this.closest('.mobile-menu').classList.remove('open')">projects</a>
+    <a href="#experience" onclick="this.closest('.mobile-menu').classList.remove('open')">experience</a>
+    <a href="#contact"    onclick="this.closest('.mobile-menu').classList.remove('open')">contact</a>
+  </div>
+
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div>
+      <p class="hero-eyebrow anim d1">based in south africa · open to work</p>
+
+      <h1 class="name anim d2">
+        Nhlavutelo<br>
+        <em>Shiviri.</em>
+      </h1>
+
+      <p class="hero-sub anim d3">
+        // aspiring <span>full stack developer</span>
+      </p>
+
+      <p class="hero-desc anim d4">
+        I craft end-to-end web applications — from pixel-perfect interfaces
+        to robust APIs and databases. Driven by clean code, great user experiences,
+        and the thrill of shipping things that actually work.
+      </p>
+
+      <div class="hero-actions anim d5">
+        <a href="#projects" class="btn-gold">view my work →</a>
+        <a href="#contact"  class="btn-ghost">get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+      scroll to explore
+    </div>
+  </section>
+
+  <!-- ── REACT PREVIEW ── -->
+  <section id="react-preview-root">
+    <div id="react-root"></div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-label reveal">
+      <span class="s-num">01</span>
+      <div class="s-rule"></div>
+      <h2 class="s-title">About Me</h2>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Bio -->
+      <div class="about-body reveal">
+        <p>
+          Hey — I'm <strong>Nhlavutelo Shiviri</strong>, a passionate developer from South Africa
+          on a focused mission to become a professional <strong>Full Stack Developer</strong>.
+          I love the challenge of owning the entire product: from designing the database schema
+          to shipping a smooth, responsive front end.
+        </p>
+        <p>
+          I'm currently honing my skills through real-world internship projects, building things
+          that solve actual problems. My approach is simple — <strong>write clean code, think in systems,
+          and never stop learning</strong>.
+        </p>
+        <p>
+          When I'm not coding, I'm exploring open-source projects, watching dev tutorials, or
+          sketching out the next app idea in my notebook. I believe the best developers are
+          relentlessly curious and I fit that description.
+        </p>
+
+        <!-- Stats --> 
+        <div class="stat-row">
+          <div class="stat-box">
+            <div class="stat-num">5+</div>
+            <div class="stat-lbl">projects built</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">3+</div>
+            <div class="stat-lbl">tech stacks</div>
+          </div>  
+          <div class="stat-box">
+            <div class="stat-num">∞</div>
+            <div class="stat-lbl">things to learn</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">1</div>
+            <div class="stat-lbl">focused goal</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skill-col reveal">
+        <h3>// tech stack</h3>
+
+        <div class="skill-block">
+          <div class="skill-cat">frontend</div>
+          <div class="pills">
+            <span class="pill hi">HTML5</span>
+            <span class="pill hi">CSS3</span>
+            <span class="pill hi">JavaScript</span>
+            <span class="pill">React.js</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-cat">backend</div>
+          <div class="pills">
+            <span class="pill hi">Node.js</span>
+            <span class="pill hi">Express.js</span>
+            <span class="pill">Python</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">JWT Auth</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-cat">databases</div>
+          <div class="pills">
+            <span class="pill">MongoDB</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="skill-cat">tools</div>
+          <div class="pills">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Postman</span>
+            <span class="pill">Vercel</span>
+            <span class="pill">Linux CLI</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-label reveal">
+      <span class="s-num">02</span>
+      <div class="s-rule"></div>
+      <h2 class="s-title">Projects</h2>
+    </div>
+
+    <div class="proj-grid">
+
+      <!-- Featured -->
+      <div class="proj-card wide reveal">
+        <div>
+          <div class="proj-top">
+            <span class="proj-badge">featured · full stack</span>
+            <div class="proj-links">
+              <a href="#">⌥ GitHub</a>
+              <a href="#">↗ Live Demo</a>
+            </div>
+          </div>
+          <h3>BudgetWise — Personal Finance Tracker</h3>
+          <p>
+            A full-stack web app that helps users track income, expenses, and savings goals
+            in real time. Features include category-based analytics, monthly reports,
+            CSV export, and secure authentication with JWT. Built as a Future Interns task.
+          </p>
+          <div class="tech-row">
+            <span class="tech">React.js</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Express</span>
+            <span class="tech">MongoDB</span>
+            <span class="tech">Chart.js</span>
+            <span class="tech">JWT</span>
+            <span class="tech">Vercel</span>
+          </div>
+        </div>
+
+        <!-- UI Mockup -->
+        <div class="proj-mock">
+          <div class="m-topbar">
+            <div class="m-dot r"></div>
+            <div class="m-dot y"></div>
+            <div class="m-dot g"></div>
+          </div>
+          <div class="m-bar a"></div>
+          <div class="m-bar b"></div>
+          <div class="m-cards">
+            <div class="m-card a"></div>
+            <div class="m-card"></div>
+            <div class="m-card"></div>
+          </div>
+          <div class="m-sidebar">
+            <div class="m-sbar"></div>
+            <div class="m-content">
+              <div class="m-bar d"></div>
+              <div class="m-bar c"></div>
+              <div class="m-bar b"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <span class="proj-badge">full stack</span>
+          <div class="proj-links">
+            <a href="#">⌥ GitHub</a>
+            <a href="#">↗ Live</a>
+          </div>
+        </div>
+        <h3>TaskBoard — Team Task Manager</h3>
+        <p>
+          A kanban-style task management app with drag-and-drop cards,
+          user assignments, due dates, and real-time updates via Socket.io.
+          Includes an admin panel for team leads.
+        </p>
+        <div class="tech-row">
+          <span class="tech">React</span>
+          <span class="tech">Node.js</span>
+          <span class="tech">Socket.io</span>
+          <span class="tech">MongoDB</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <span class="proj-badge">frontend</span>
+          <div class="proj-links">
+            <a href="#">⌥ GitHub</a>
+            <a href="#">↗ Live</a>
+          </div>
+        </div>
+        <h3>This Portfolio Website</h3>
+        <p>
+          You're looking at it! A hand-crafted, responsive portfolio built with
+          semantic HTML, custom CSS animations, and vanilla JS —
+          zero frameworks, maximum performance. 100/100 Lighthouse score.
+        </p>
+        <div class="tech-row">
+          <span class="tech">HTML5</span>
+          <span class="tech">CSS3</span>
+          <span class="tech">JavaScript</span>
+          <span class="tech">SEO</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <span class="proj-badge">backend api</span>
+          <div class="proj-links">
+            <a href="#">⌥ GitHub</a>
+          </div>
+        </div>
+        <h3>ShopAPI — E-Commerce REST API</h3>
+        <p>
+          A fully documented REST API for an e-commerce platform with
+          product catalogue, cart management, order processing, and
+          Paystack payment integration. Tested with Postman, deployed on Railway.
+        </p>
+        <div class="tech-row">
+          <span class="tech">Node.js</span>
+          <span class="tech">Express</span>
+          <span class="tech">MySQL</span>
+          <span class="tech">Paystack</span>
+          <span class="tech">Railway</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <div class="section-label reveal">
+      <span class="s-num">03</span>
+      <div class="s-rule"></div>
+      <h2 class="s-title">Experience &amp; Education</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2025 — present</div>
+        <div class="tl-role">Full Stack Developer Intern</div>
+        <div class="tl-org">Future Interns · Remote, South Africa</div>
+        <ul class="tl-list">
+          <li>Building and shipping full-stack applications as structured internship tasks, simulating a real development environment.</li>
+          <li>Practising professional workflows: Git branching, pull requests, README documentation, and deployment pipelines.</li>
+          <li>Developing this portfolio website as a real deliverable to present to future employers and clients.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2024</div>
+        <div class="tl-role">Self-Directed Learning</div>
+        <div class="tl-org">Online · freeCodeCamp · The Odin Project · YouTube</div>
+        <ul class="tl-list">
+          <li>Completed full-stack curriculum covering HTML, CSS, JavaScript, React, Node.js, and databases.</li>
+          <li>Built 5+ personal projects to solidify concepts and create a foundation portfolio.</li>
+          <li>Engaged with developer communities, open-source repos, and daily coding challenges.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">education</div>
+        <div class="tl-role">IT / Computer Science Studies</div>
+        <div class="tl-org">South Africa</div>
+        <ul class="tl-list">
+          <li>Foundation in computer science concepts, problem solving, and logical thinking.</li>
+          <li>Actively pursuing certifications in web development and cloud fundamentals.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-label reveal">
+      <span class="s-num">04</span>
+      <div class="s-rule"></div>
+      <h2 class="s-title">Get In Touch</h2>
+    </div>
+
+    <div class="contact-wrap">
+
+      <!-- Info -->
+      <div class="contact-left reveal">
+        <h3>Let's build something worth showing.</h3>
+        <p>
+          Whether you have a project, an opportunity, or just want to talk tech —
+          I'm all ears. I respond within 24 hours and I'm always open
+          to new challenges.
+        </p>
+        <div class="c-links">
+          <a href="mailto:nhlavutelo.shiviri@email.com" class="c-link">
+            <span class="c-icon">✉</span>
+            shivirinhlavutelo@email.com
+          </a>
+          <a href="https://github.com/nhlavuteloshiviri" class="c-link" target="_blank">
+            <span class="c-icon">⌥</span>
+            github.com/nhlavuteloshiviri
+          </a>
+          <a href="https://www.linkedin.com/in/nhlavuteloshiviri2794661a1" class="c-link" target="_blank">
+            <span class="c-icon">in</span>
+            linkedin.com/in/nhlavuteloshiviri2794661a1
+          </a>
+          <a href="#" class="c-link">
+            <span class="c-icon">↓</span>
+            download my CV (.pdf)
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal">
+        <form class="contact-form" id="cForm" onsubmit="handleForm(event)">
+          <div class="f-row">
+            <div class="f-group">
+              <label>name</label>
+              <input type="text" placeholder="Your name" required>
+            </div>
+            <div class="f-group">
+              <label>email</label>
+              <input type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="f-group">
+            <label>reason</label>
+            <select>
+              <option value="">Select a topic…</option>
+              <option>Job opportunity</option>
+              <option>Freelance project</option>
+              <option>Collaboration</option>
+              <option>Just saying hi</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label>message</label>
+            <textarea rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+          </div>
+          <div class="f-success" id="fSuccess">
+            ✓ Message sent! I'll be in touch within 24 hours.
+          </div>
+          <button type="submit" class="f-submit">send message →</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>designed &amp; built by <span>Nhlavutelo Shiviri</span> · 2025</p>
+    <div class="socials">
+      <a href="https://github.com/nhlavuteloshiviri"      target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/nhlavuteloshiviri2794661a1" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/nhlavuteloshiviri"     target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+
+  <!-- ── JAVASCRIPT ── -->
+  <script>
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('in'), i * 90);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 130) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    }, { passive: true });
+
+    // Contact form submission
+    function handleForm(e) {
+      e.preventDefault();
+      document.getElementById('fSuccess').style.display = 'block';
+      e.target.querySelector('.f-submit').style.display = 'none';
+      e.target.reset();
+    }
+  </script>
+
+  <script type="module" src="./react-app.js"></script>
+</body>
+</html>
